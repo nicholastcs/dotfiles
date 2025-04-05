@@ -1,0 +1,83 @@
+* {
+  border: none;
+  border-radius: 30px;
+  min-height: 0;
+  font-family:
+    "Lato", "Font Awesome 5 Brands", "Font Awesome 5 Free",
+    "Font Awesome 5 Free Solid", "Noto Sans CJK SC";
+  font-weight: 600;
+  font-size: 15px;
+  color: #c7ab7a;
+}
+
+window#waybar {
+  /* background-color: rgba(255, 255, 255, 0.10); */
+  background-color: transparent;
+}
+
+window#waybar > box {
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
+
+tooltip {
+  background-color: rgb(29, 32, 33);
+  border: 2px solid;
+  border-color: #d8dee9;
+  border-radius: 4px;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#bluetooth,
+#custom-dunst,
+#window,
+#pulseaudio {
+  margin: 6px 6px 6px 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #2e3440;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#custom-dunst {
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#workspaces {
+  background-color: #2e3440;
+  margin: 6px 0px 6px 6px;
+}
+
+#workspaces button {
+  all: initial;
+  min-width: 15px;
+  padding: 2px 4px;
+}
+
+#workspaces button.active {
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  min-width: 40px;
+}
+
+#workspaces button.active label {
+  border-radius: 0%;
+  min-width: 1em;
+  border-bottom: 2px solid #c7ab7a;
+}
+
+#workspaces button.urgent {
+  background-color: #bf616a;
+}
