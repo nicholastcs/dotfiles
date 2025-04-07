@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+hypridle &
 
 swayosd-server &
 
