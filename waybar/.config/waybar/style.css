@@ -1,6 +1,6 @@
 * {
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   min-height: 0;
   font-family:
     "Lato", "Font Awesome 5 Brands", "Font Awesome 5 Free",
@@ -36,28 +36,25 @@ tooltip {
 #bluetooth,
 #custom-dunst,
 #window,
+#workspaces,
 #pulseaudio {
-  margin: 6px 6px 6px 0px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
+  border: 2px solid;
+  border-color: #3b4252;
+  margin: 4px 6px 4px 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
   background-color: #2e3440;
 }
 
 window#waybar.empty #window {
   background-color: transparent;
+  border: none;
 }
 
 #custom-dunst {
-  margin-right: 0px;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-#workspaces {
-  background-color: #2e3440;
-  margin: 6px 0px 6px 6px;
+  margin-right: 1em;
 }
 
 #workspaces button {

@@ -14,8 +14,8 @@ dbus-monitor path='/org/freedesktop/Notifications',interface='org.freedesktop.DB
       TEXT="$DISABLED"
       COUNT="$(dunstctl count waiting)"
       if [ "$COUNT" != '0' ]; then
-        TEXT="$DISABLED - $COUNT"
+        TEXT="$DISABLED   $COUNT"
       fi
     fi
-    printf '{"text": "%s", "class": "%s"}\n' "$TEXT" "$CLASS"
+    printf '{"text": "%s ", "class": "%s"}\n' "$TEXT" "$CLASS"
   done
