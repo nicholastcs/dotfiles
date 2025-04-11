@@ -3,7 +3,7 @@
   border-radius: 20px;
   min-height: 0;
   font-family:
-    "Lato", "Font Awesome 6 Brands", "Font Awesome 6 Free",
+    "Lato", "font-logos", "Font Awesome 6 Brands", "Font Awesome 6 Free",
     "Font Awesome 6 Free Solid", "Noto Sans CJK SC";
   font-weight: 600;
   font-size: 15px;
@@ -60,6 +60,7 @@ window#waybar.empty #window {
 
 #custom-archicon {
   font-family: "font-logos";
+  color: #1793d1;
 }
 
 #workspaces button {
