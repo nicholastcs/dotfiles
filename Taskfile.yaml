@@ -1,0 +1,24 @@
+version: "3"
+
+tasks:
+  loadAll:
+    platforms:
+      - linux
+    preconditions:
+      - sh: command -v task
+        msg: Go-Task is unavailable.
+    desc: >-
+      Using GNU Stow to create symlinks of application configs
+      from this repo to home directory
+    cmds:
+      - for:
+          - dunst
+          - hypr
+          - kitty
+          - nvim
+          - rofi
+          - swayosd
+          - vscode
+          - waybar
+          - zsh
+        cmd: stow -t ~ {{ .ITEM }}
