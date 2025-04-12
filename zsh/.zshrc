@@ -105,6 +105,7 @@ export EDITOR=nvim
 
 alias k="kubectl"
 alias cc="cd ~/.config/"
+alias task="go-task" # because arch task CLI is aliased with go-task
 
 export PATH="$PATH:$HOME/go/bin/"
 
