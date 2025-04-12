@@ -5,8 +5,8 @@ tasks:
     platforms:
       - linux
     preconditions:
-      - sh: command -v task
-        msg: Go-Task is unavailable.
+      - sh: command -v stow
+        msg: GNU stow is unavailable.
     desc: >-
       Using GNU Stow to create symlinks of application configs
       from this repo to home directory
