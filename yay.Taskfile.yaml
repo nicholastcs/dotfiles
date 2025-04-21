@@ -1,0 +1,20 @@
+version: "3"
+
+tasks:
+  _sync:
+    internal: true
+    desc: Sync packages
+    cmd: yay -Syy
+
+  installPkg:
+    desc: >-
+      Installs all Arch packages that includes packages from AUR
+    cmds: 
+      - task: _sync
+      - yay -S --needed $(cat pkglist.txt)
+
+  backupPkg:
+    desc: >-
+      Retrieves lists of Arch packages installed, inclusive of 
+      packages from AUR
+    cmd: yay -Qqe > pkglist.txt

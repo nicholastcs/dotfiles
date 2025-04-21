@@ -1,5 +1,8 @@
 version: "3"
 
+includes:
+  yay: ./yay.Taskfile.yaml
+  
 tasks:
   loadAll:
     platforms:
