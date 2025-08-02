@@ -73,10 +73,9 @@ slurp
 smartmontools
 stow
 swayosd-git
-swww-git
+swww
 timeshift
 tree
-ttf-font-awesome
 ttf-font-logos
 ttf-jetbrains-mono-nerd
 ttf-lato
@@ -91,6 +90,7 @@ waybar
 wget
 wireless_tools
 wireplumber
+woff2-font-awesome
 wpa_supplicant
 xdg-desktop-portal-hyprland
 xdg-utils
